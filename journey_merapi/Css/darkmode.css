@@ -1,0 +1,286 @@
+/* =========================================================
+   DARK MODE — GLOBAL VARIABLES
+   ========================================================= */
+
+body.dark-mode {
+    --bg: #111;
+    --card: #1a1a1a;
+    --text: #e6e6e6;
+    --text-muted: #bfbfbf;
+    --border: #333;
+    --navbar-bg: rgba(20,20,20,0.9);
+    --footer-bg: #0d0d0d;
+}
+
+/* =========================================================
+   GLOBAL BACKGROUND & TEXT
+   ========================================================= */
+
+body.dark-mode {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+body, section, div, input, textarea, select {
+    transition: background .3s ease, color .3s ease, border .3s ease;
+}
+
+/* Semua heading */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+    color: var(--text) !important;
+}
+
+/* Semua paragraf */
+body.dark-mode p {
+    color: var(--text-muted) !important;
+}
+
+/* Semua label form */
+body.dark-mode label {
+    color: var(--text) !important;
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+body.dark-mode .navbar {
+    background: var(--navbar-bg) !important;
+    backdrop-filter: blur(10px);
+}
+
+body.dark-mode .navbar a {
+    color: var(--text) !important;
+}
+
+body.dark-mode .navbar a.active,
+body.dark-mode .navbar a:hover {
+    color: var(--red) !important;
+}
+
+body.dark-mode #userName {
+    color: var(--text) !important;
+}
+
+/* =========================================================
+   HOMEPAGE (index)
+   ========================================================= */
+
+body.dark-mode .main-content-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 0.45;
+}
+
+body.dark-mode .hero .title,
+body.dark-mode .hero .small-text,
+body.dark-mode .hero .desc {
+    color: #fff !important;
+}
+
+body.dark-mode .facta-section {
+    background: var(--bg) !important;
+}
+
+/* Card Fakta */
+body.dark-mode .card {
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-muted) !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.45);
+}
+
+body.dark-mode .card h3 {
+    color: var(--red) !important;
+}
+
+body.dark-mode .card:hover {
+    background: #222 !important;
+}
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+body.dark-mode .about-section,
+body.dark-mode .wisata-merapi {
+    background: var(--bg) !important;
+}
+
+body.dark-mode .about-section h2 {
+    color: var(--text) !important;
+}
+
+body.dark-mode .about-section .text {
+    color: var(--text-muted) !important;
+}
+
+body.dark-mode .img-grid img {
+    border: 2px solid var(--border);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+/* Wisata Merapi Cards */
+body.dark-mode .wisata-card {
+    background: var(--card) !important;
+    border: 1px solid var(--border);
+    color: var(--text-muted) !important;
+}
+
+body.dark-mode .wisata-card h3 {
+    color: var(--red) !important;
+}
+
+body.dark-mode .wisata-card:hover {
+    background: #222 !important;
+}
+
+/* Judul wisata */
+body.dark-mode .wisata-merapi h1 {
+    color: #fff !important;
+}
+
+body.dark-mode .wisata-merapi p {
+    color: var(--text-muted) !important;
+}
+
+/* =========================================================
+   TOUR PAGE
+   ========================================================= */
+
+body.dark-mode .main-tour-bg {
+    background-color: #000 !important;
+}
+
+body.dark-mode .hero-tour {
+    color: #fff !important;
+}
+
+body.dark-mode .card-tour {
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+}
+
+body.dark-mode .card-tour h3 {
+    color: var(--text) !important;
+}
+
+body.dark-mode .card-tour p {
+    color: var(--text-muted) !important;
+}
+
+body.dark-mode .card-tour:hover {
+    background: #222 !important;
+}
+
+/* =========================================================
+   ORDER PAGE
+   ========================================================= */
+
+body.dark-mode .order-section {
+    background: var(--bg) !important;
+}
+
+body.dark-mode .container {
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+}
+
+body.dark-mode .order-section h1,
+body.dark-mode .order-section h2,
+body.dark-mode .order-section h3,
+body.dark-mode .order-section .section-title {
+    color: #fff !important;
+}
+
+body.dark-mode .order-section p {
+    color: var(--text-muted) !important;
+}
+
+/* Pickup label (yang sebelumnya tidak putih) */
+body.dark-mode .pickup-label {
+    color: #ffffff !important;
+}
+
+/* Tour list */
+body.dark-mode .tour-option:hover {
+    background: #222 !important;
+}
+
+body.dark-mode .tour-price {
+    color: #fff !important;
+}
+
+body.dark-mode .selected-tours {
+    background: #181818 !important;
+    border-left: 4px solid var(--red) !important;
+}
+
+body.dark-mode .selected-tour-item {
+    color: var(--text-muted) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+/* FORM FIELD FIX */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #d0d0d0 !important;
+}
+
+body.dark-mode select option {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+body.dark-mode .kontak-section {
+    background: var(--bg) !important;
+}
+
+body.dark-mode .kontak-section h1,
+body.dark-mode .kontak-section p {
+    color: var(--text) !important;
+}
+
+body.dark-mode .contact-card {
+    background: var(--card) !important;
+    border: 1px solid var(--border);
+    color: var(--text-muted) !important;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+body.dark-mode .footer-merapi,
+body.dark-mode footer {
+    background: var(--footer-bg) !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .footer-merapi h3 {
+    color: var(--red) !important;
+}
+
+body.dark-mode .footer-merapi p,
+body.dark-mode .footer-merapi a,
+body.dark-mode .footer-merapi .copyright {
+    color: #e0e0e0 !important;
+}
